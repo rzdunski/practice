@@ -1,1 +1,1 @@
-Scripts which search and display all IPs in local network. It's written in python and based on arp-scan tool which is needed for the script to work under linux. For debain disto install arp-scan type "sudo apt-get install arp-scan" before usage.
+Script adresy_arp.py search and display all IPs in local network. It's written in python and based on arp-scan tool which is needed for the script to work under linux. For debain disto install arp-scan type "sudo apt-get install arp-scan" before usage.
