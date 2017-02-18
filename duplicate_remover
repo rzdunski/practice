@@ -1,0 +1,10 @@
+#!/bin/bash
+
+IDs=$(./gdrive list -q "'0B5Jg_HVsCdvNakwwbFI5ZjI2eDA' in parents" -m all | awk '{print $2, $4, $5, $1}' | sort | uniq -w 19 -d | awk '{print $4}')
+echo "Duplicates:"
+echo $IDs
+
+for id in $IDs
+do
+  ./gdrive delete $id
+done
